@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(108, 123, 83);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    height: 100vh;
+    /* Set the container height to 100% of the viewport height */
+}
+
+.centered-component {
+    /* Your component styles go here */
+    background-color: white;
+    border: 2px solid rgba(168, 145, 145, 0.5);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+#button {
+    background-color: rgb(206, 149, 80);
+}
