@@ -1,15 +1,16 @@
 import React from 'react'
 import "./WelcomePage.css"
 
+
 import { Button, Form, Input } from 'antd';
 
 
 
-const WelcomePage = ({ setName }) => {
+const WelcomePage = ({ setName, setRedirectToHome }) => {
 
     const onFinish = (values) => {
         setName(values)
-
+        setRedirectToHome(true)
         console.log('Success:', values);
     };
     const onFinishFailed = (errorInfo) => {
@@ -56,6 +57,7 @@ const WelcomePage = ({ setName }) => {
                         span: 15,
                     }}
                 >
+
                     <Button id='button' type="primary" htmlType="submit">
                         Ingresar
                     </Button>
